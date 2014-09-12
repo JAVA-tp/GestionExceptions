@@ -14,7 +14,7 @@ public class GastonLagaffe {
 
 			System.out.println("Ouf, j'ai fini.");
 		}
-
+		
 		catch (Exception e) {
 
 			System.out.println("M'enfin ! " + e.getMessage());
@@ -89,6 +89,31 @@ public class GastonLagaffe {
 		}
 
 	}
+	
+	public void commanderFournitures() throws Exception
+	{
+		System.out.println("D'abord, réchauffer ma morue aux fraises...");
+		System.out.println("Heureusement, j'ai réparé mon réchaud à gaz.");
+		throw new Exception("Vite, où est l'extincteur ??");
+		
+	}
+	
+	private static void preparerJournal(GastonLagaffe gaston)
+	{
+		System.out.println("Gaston, une commande urgente !");
+		try
+		{
+			gaston.commanderFournitures();
+		}
+		catch(Exception e)
+		{
+			System.out.println("Gaston, d'où vient cette odeur ?");
+			System.out.println("Vite, où est l'extincteur ??");
+			System.out.println(e.getMessage());
+		}
+		System.out.println("Déjà terminé ? Il progresse, ce petit...");
+	}
+	
 	public static void main(String[] args) {
 
 		GastonLagaffe gaston = new GastonLagaffe();
@@ -110,6 +135,8 @@ public class GastonLagaffe {
 		appeler(gaston, "Mr. Boulier");
 		appeler(gaston, "Prunelle");
 		appeler(gaston, "Jules-de-chez-Smith");
+		preparerJournal(gaston);
+		
 	}
 
 }
