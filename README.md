@@ -5,7 +5,7 @@ TP du 12/09 - Gestions des exceptions en JAVA
 
 L'objectif de ce TP est de vous familiariser avec le mécanisme de gestion des exceptions en utilisant comme support le langage Java.
 
-##Introduction : qu'est-ce qu'une exception ?
+###Introduction : qu'est-ce qu'une exception ?
 
 
 > **Définition** : Une exception est un événement qui apparaît pendant le déroulement d'un programme et qui empêche la poursuite normale de son exécution.
